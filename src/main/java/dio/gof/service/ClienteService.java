@@ -4,10 +4,7 @@ import dio.gof.model.Cliente;
 
 public interface ClienteService {
 
-		static Iterable<Cliente> buscarTodos() {
-	
-			return null;
-		}
+		Iterable<Cliente> buscarTodos();
 		
 		Cliente buscarPorId(Long id);
 		

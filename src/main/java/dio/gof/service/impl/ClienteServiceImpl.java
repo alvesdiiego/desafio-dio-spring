@@ -47,6 +47,7 @@ public class ClienteServiceImpl  implements  ClienteService {
 		clienteRepository.deleteById(id);
 	}
 	
+	
 	private void salvarClienteComCep(Cliente cliente) {
 		String cep = cliente.getEndereco().getCep();
 		Endereco endereco = enderecoRepository.findById(cep).orElseGet(() ->{
